@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact – Groepspraktijk De Kering</title>
+    <!-- Alleen de globale stylesheet -->
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+<header class="nav">
+    <div class="nav-container">
+        <div class="header-branding">
+            <a href="main.html" class="logo-link">
+                <img class="logo" src="../images/Logo.png" alt="logo" />
+            </a>
+            <div class="branding-text">
+                <h1 class="nav-title">Groepspraktijk De Kering</h1>
+                <p class="nav-subtitle">Therapie &amp; Coaching</p>
+            </div>
+        </div>
+
+        <nav class="header-bottom" aria-label="Hoofdmenu">
+            <ul class="nav-menu" id="navMenu">
+                <li><a class="nav-link" href="main.html">Home</a></li>
+                <li><a class="nav-link" href="aanbod.html">Aanbod</a></li>
+                <li><a class="nav-link" href="familieopstellingen.html">Familieopstellingen</a></li>
+                <li class="dropdown">
+                    <a class="nav-link" href="over_ons.html">Over ons <span class="dropdown-arrow">▾</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Team/Elisabet.html">Elisabet Abts</a></li>
+                        <li><a href="Team/Liesbet.html">Liesbet Laenen</a></li>
+                        <li><a href="Team/Marijke.html">Marijke Leys</a></li>
+                        <li><a href="Team/Marlies.html">Marlies Borgers</a></li>
+                        <li><a href="Team/Sarie.html">Sarie Goossens</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav-link" href="Wegbeschrijving.html">Wegbeschrijving</a></li>
+                <li><a class="nav-link active" href="contact.html">Contact</a></li>
+            </ul>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Navigatie openen/sluiten">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- één sectie voor nette top-padding onder de fixed navbar -->
+    <section class="section">
+        <div class="container">
+            <h1 class="section-title">Contact</h1>
+            <p class="section-description">
+                <strong>Een intakegesprek is mogelijk binnen de 2 weken na aanmelding.</strong><br>
+                Mail <a href="mailto:info@praktijkdekering.be">info@praktijkdekering.be</a> of gebruik het formulier hieronder.
+            </p>
+
+            <!-- FORMULIER (eenvoudig, 1 kolom – geen extra CSS nodig) -->
+            <form id="contactForm" novalidate style="max-width: 760px; margin: 2rem auto 0;">
+                <div style="margin-bottom: 1rem;">
+                    <label for="email" style="display:block; font-weight:600; margin-bottom:.25rem;">E-mailadres *</label>
+                    <input type="email" id="email" name="email" placeholder="naam@voorbeeld.be" required
+                           style="width:100%; padding:.7rem .85rem; border:1px solid var(--color-border); border-radius:8px;" />
+                    <small style="color:var(--color-text-light);">Gebruik een geldig e-mailadres.</small>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <label for="subject" style="display:block; font-weight:600; margin-bottom:.25rem;">Onderwerp</label>
+                    <input type="text" id="subject" name="subject" placeholder="Onderwerp (optioneel)"
+                           style="width:100%; padding:.7rem .85rem; border:1px solid var(--color-border); border-radius:8px;" />
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <label for="therapist" style="display:block; font-weight:600; margin-bottom:.25rem;">
+                        Ik wil graag in contact komen met (optioneel)
+                    </label>
+                    <select id="therapist" name="therapist"
+                            style="width:100%; padding:.7rem .85rem; border:1px solid var(--color-border); border-radius:8px;">
+                        <option value="">— Maak je keuze —</option>
+                        <option value="Sarie Goossens">Sarie Goossens</option>
+                        <option value="Marijke Leys">Marijke Leys</option>
+                        <option value="Liesbet Laenen">Liesbet Laenen</option>
+                        <option value="Marlies Borgers">Marlies Borgers</option>
+                        <option value="Elisabet Abts">Elisabet Abts</option>
+                    </select>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <label for="message" style="display:block; font-weight:600; margin-bottom:.25rem;">Bericht *</label>
+                    <textarea id="message" name="message" rows="7" placeholder="Beschrijf kort je vraag of verzoek." required
+                              style="width:100%; padding:.7rem .85rem; border:1px solid var(--color-border); border-radius:8px; resize:vertical;"></textarea>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <label style="display:flex; gap:.6rem; align-items:flex-start;">
+                        <input type="checkbox" id="consent" name="consent" required />
+                        <span>Ja, ik ga akkoord met de
+              <a href="/privacyverklaring-praktijk-de-kering" target="_blank" rel="noopener">Privacyverklaring</a>.
+            </span>
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-primary" style="border:none; cursor:pointer;">Verzenden</button>
+                <p id="formStatus" role="status" aria-live="polite" style="margin-top:.75rem;"></p>
+            </form>
+
+            <!-- Contactlijst in de stijl van styles.css -->
+            <div style="margin-top: 3rem;">
+                <h3 class="section-title" style="margin-bottom:.5rem;">Therapeuten</h3>
+                <div class="contact-list" id="team-contact">
+                    <div class="contact-item">
+                        <h4>Sarie Goossens</h4>
+                        <div class="contact-row"><i class="fas fa-phone"></i><span>0499/42.62.58</span></div>
+                        <div class="contact-row"><i>✉</i><a href="mailto:sarie.goossens@gmail.com">sarie.goossens@gmail.com</a></div>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Liesbet Laenen</h4>
+                        <div class="contact-row"><i class="fas fa-phone"></i><span>0487/39.63.06</span></div>
+                        <div class="contact-row"><i>✉</i><a href="mailto:liesbetlaenen.psy@gmail.com">liesbetlaenen.psy@gmail.com</a></div>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Elisabet Abts</h4>
+                        <div class="contact-row"><i class="fas fa-phone"></i><span>0484/34.28.48</span></div>
+                        <div class="contact-row"><i>✉</i><a href="mailto:elisabetabts@gmail.com">elisabetabts@gmail.com</a></div>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Marijke Leys</h4>
+                        <div class="contact-row"><i class="fas fa-phone"></i><span>0477/25.75.50</span></div>
+                        <div class="contact-row"><i>✉</i><a href="mailto:marijke.leys@voicedialogue.be">marijke.leys@voicedialogue.be</a></div>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Marlies Borgers</h4>
+                        <div class="contact-row"><i class="fas fa-phone"></i><span>0472/96.00.89</span></div>
+                        <div class="contact-row"><i>✉</i><a href="mailto:marliesborgers@gmail.com">marliesborgers@gmail.com</a></div>
+                    </div>
+                </div>
+                <p class="info-text" style="margin-top:1rem;">
+                    <em>Kan je een geplande afspraak niet nakomen? Verwittig ons minstens 24 uur vooraf.</em>
+                </p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer-content">
+        <p>&copy; Groepspraktijk De Kering</p>
+    </div>
+</footer>
+
+<!-- Globale script (mobile menu, etc.) -->
+<script src="../js/script.js"></script>
+
+<!-- Demo: nog niet echt verzenden -->
+<script>
+    document.getElementById('contactForm')?.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const status = document.getElementById('formStatus');
+        if (!this.email.value || !this.message.value || !this.consent.checked) {
+            status.textContent = 'Vul de verplichte velden in en accepteer de privacyverklaring.';
+            return;
+        }
+        status.textContent = 'Demo: het formulier wordt nog niet verstuurd.';
+    });
+</script>
+</body>
+</html>
