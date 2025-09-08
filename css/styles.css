@@ -151,14 +151,14 @@ body {
 .quote p { font-family: var(--font-serif); font-size: 1.3rem; color: var(--color-primary); margin-bottom: 1rem; }
 .quote cite { font-size: .9rem; color: var(--color-text-light); font-style: normal; }
 
-/* Therapy (main) */
+/* Therapy (index) */
 .therapy-content { display: grid; grid-template-columns: 1.2fr .8fr; gap: var(--spacing-lg); align-items: center; min-height: 70vh; }
 .therapy-description { max-width: 600px; }
 .therapy-description p { font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem; color: var(--color-text); }
 .therapy-description p:last-child { font-weight: 500; color: var(--color-primary); }
 .therapy-img { width: 100%; height: 500px; object-fit: cover; border-radius: 4px; box-shadow: 0 15px 40px rgba(0,0,0,.1); }
 
-/* Methods grid (main) */
+/* Methods grid (index) */
 .methods-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: var(--spacing-xs); justify-content: center; align-content: center; align-items: center; justify-items: center; min-height: 60vh; }
 .method-card { text-align: center; padding: var(--spacing-sm); transition: var(--transition); }
 .method-card:hover { transform: translateY(-5px); }
