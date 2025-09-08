@@ -730,3 +730,9 @@ html {
 .content-blocks-row ul {
     padding-left: 1.2rem;
 }
+
+.content-block h2,
+.content-block h3,
+.content-blocks-row .content-block h3 {
+    color: var(--color-primary);
+}
