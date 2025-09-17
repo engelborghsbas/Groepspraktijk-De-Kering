@@ -278,7 +278,7 @@ body {
 .contact-list a { color: var(--color-primary); text-decoration: none; }
 .contact-list a:hover { text-decoration: underline; }
 .contact-item { padding-bottom: .6rem; border-bottom: 1px solid var(--color-border); }
-#team-contact .contact-item:nth-last-child(-n+3) { border-bottom: 0; }
+/* #team-contact .contact-item:nth-last-child(-n+3) { border-bottom: 0; } --> lijn weg is uit commend halen. */
 
 /* =========================
    Footer
