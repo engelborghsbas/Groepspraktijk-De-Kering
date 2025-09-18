@@ -366,8 +366,8 @@ body {
     .section { padding: var(--spacing-md) 0; }
     .hero-tagline { font-size: 1.5rem; }
 
-    .reasons-grid { grid-template-columns: 1fr; gap: 1rem; }
-    .reasons-column li { padding-left: 1rem; font-size: .9rem; }
+    .reasons-grid { grid-template-columns: 1fr; list-style-type: none}
+    .reasons-column li { padding-left: 1rem; font-size: .9rem; list-style-type: none}
 
     .process-steps { grid-template-columns: 1fr; gap: 1.5rem; }
     .step-card { padding: 1.5rem; }
@@ -420,7 +420,8 @@ body {
 }
 
 /* Redenen-lijst links uitlijnen (indien gebruikt) */
-#reasons-list { text-align: left; font-size: 1rem; margin-top: 2rem; }
+#reasons-list { text-align: left; font-size: 1rem; margin-top: 2rem; list-style-type: none }
+#reasons-list ul {list-style-type: none }
 .section-title { margin-bottom: 1rem; }
 
 /* Team contact: 3 boven, 2 onder gecentreerd */

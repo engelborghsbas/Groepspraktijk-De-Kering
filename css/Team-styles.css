@@ -35,10 +35,14 @@ body{font-family:var(--font-sans);font-weight:300;line-height:1.7;color:var(--co
 .therapist-name{font-family:var(--font-serif);font-size:3rem;font-weight:400;color:var(--color-primary);margin-bottom:.5rem;line-height:1.2}
 .therapist-title{font-size:1.3rem;color:var(--color-text);margin-bottom:.5rem;font-weight:500}
 .therapist-subtitle{font-size:1.1rem;color:var(--color-text-light);margin:0}
-.therapist-photo{width:200px;height:200px;border-radius:50%;object-fit:cover;border:6px solid var(--color-primary);box-shadow:0 10px 30px rgba(0,144,206,.2)}
 
+.therapist-photo-marlies{width:200px;height:200px;border-radius:50%;object-fit:cover;border:6px solid var(--color-primary);box-shadow:0 10px 30px rgba(0,144,206,.2); object-position: top;}
+.therapist-photo-marijke{width:200px;height:200px;border-radius:50%;object-fit:cover;border:6px solid var(--color-primary);box-shadow:0 10px 30px rgba(0,144,206,.2); object-position: 50% 15%;}
+.therapist-photo-liesbet{width:200px;height:200px;border-radius:50%;object-fit:cover;border:6px solid var(--color-primary);box-shadow:0 10px 30px rgba(0,144,206,.2); object-position: 100% 10%;}
+.therapist-photo-elisabet{width:200px;height:200px;border-radius:50%;object-fit:cover;border:6px solid var(--color-primary);box-shadow:0 10px 30px rgba(0,144,206,.2); object-position: top;}
+.therapist-photo{width:200px;height:200px;border-radius:50%;object-fit:cover;border:6px solid var(--color-primary);box-shadow:0 10px 30px rgba(0,144,206,.2)}
 /* ========================= Content Layout ========================= */
-.index,.section{padding-top:4rem}
+.index,.section{padding-top:0rem}
 .therapist-content{display:grid;grid-template-columns:2fr 1fr;gap:4rem;margin-top:2rem}
 .content-index{max-width:none}
 .content-block{margin-bottom:3rem}
