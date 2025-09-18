@@ -134,6 +134,14 @@ body {
     font-weight: 400; color: var(--color-primary);
     margin-bottom: var(--spacing-sm); text-align: center; letter-spacing: .05em;
 }
+
+.section-title-lijn {
+    font-family: var(--font-serif);
+    font-size: clamp(1.8rem, 2.7vw, 2.1rem);
+    font-weight: 400; color: var(--color-primary);
+    margin-bottom: var(--spacing-xs); text-align: center; letter-spacing: .05em;
+}
+
 .section-description {
     font-size: 1.2rem; line-height: 1.8; color: var(--color-text);
     text-align: left; max-width: 500px; margin: 0 auto;
@@ -145,6 +153,8 @@ body {
 .step-card h3 {
     font-weight: 400;
 }
+
+#inzichten .content-grid { align-items: start}
 
 /* Quote */
 .quote { margin-top: var(--spacing-md); text-align: center; font-style: italic; }
